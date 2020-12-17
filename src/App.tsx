@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// Theming
+import { Global, ThemeProvider, css } from '@emotion/react';
+import { GlobalStyles } from '@ui/theme';
 
-export default App;
+// Context
+import { AppThemeContext, AppThemeProvider } from '@context/AppTheme';
+
+// Components
+import Header from '@blocks/Header';
+import Interface from '@blocks/Interface';
+
+// Styles
+import { InnerWrapper, Main } from '@ui/theme/Global.styles';
+
+const App = (): React.ReactElement => {
+    const { theme } = useContext(AppThemeContext);
+
+    return (
+        <ThemeProvider theme={ theme }>
+            <Header />
+
+            <Main>
+                <InnerWrapper>
+                    <Interface />
+                </InnerWrapper>
+            </Main>
+
+            <Global styles={ css(GlobalStyles.Globals) } />
+        </ThemeProvider>
+    );
+};
+
+const withThemeApp = (props: any): React.ReactElement => (
+    <AppThemeProvider>
+        <App { ...props } />
+    </AppThemeProvider>
+);
+
+export default withThemeApp;

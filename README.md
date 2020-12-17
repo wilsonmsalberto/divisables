@@ -1,46 +1,99 @@
-# Getting Started with Create React App
+# The Divisible Counter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Website](https://)
 
-## Available Scripts
+## Software
 
-In the project directory, you can run:
+This app is brought to you by all of these lovely software projects:
 
-### `yarn start`
+### Frameworks & Bundlers
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Babel](https://babeljs.io/)
+- [React](https://facebook.github.io/react/)
+- [Webpack](https://webpack.github.io/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Styling
 
-### `yarn test`
+- [Emotion](https://emotion.sh)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Testing & Code Quality
 
-### `yarn build`
+- [ESLint](https://eslint.org/)
+- [StyleLint](https://stylelint.io/)
+- [Jest](https://jestjs.io/)
+- [Testing Library](https://testing-library.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Others
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Typescript](https://www.typescriptlang.org/)
+- [Yarn](https://yarnpkg.com)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Requirements
 
-### `yarn eject`
+The usage of this app requires the following software to be installed in your machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Each software has its own dependencies, please follow the installation instructions as best as you
+can.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Recommended software versions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Tested and working on Mac OSX 11.1 (Big Sur):
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Software                        | Version  |
+| ------------------------------- | -------- |
+| [Yarn.js](https://yarnpkg.com/) | 1.22.10 + |
 
-## Learn More
+**You can install yarn from npm with `npm install -g yarn` but make sure to follow the website's
+instructions**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Setup project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the project to your folder of choice
+
+```bash
+git@github.com:wilsonmsalberto/divisables.git
+```
+
+Run the following lines in your terminal **while inside the project folder** in order to get/install
+all the package dependencies:
+
+```bash
+yarn
+```
+
+## Run project in development
+
+**Start the client**
+
+```bash
+yarn start
+```
+
+This will run your project in development mode and it will be running in
+[http://localhost:3000](http://localhost:3000)
+
+Any changes you make will automatically build and refresh the page thus reflecting your changes.
+
+## Run tests for the application
+
+```bash
+yarn test
+```
+
+This will run the tests that are currently written for your application
+
+If you wish to change/develop the tests and have them update dynamically you should run
+
+```bash
+yarn test:watch
+```
+
+### Developer Log
+
+#### Developments
+
+- TBD
+
+#### Improvements
+
+- TBD

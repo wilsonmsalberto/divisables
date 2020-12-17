@@ -1,0 +1,35 @@
+{
+  "plugins": [
+    "@emotion",
+    [ 
+      "module-resolver", {
+        "root" : [ "." ],
+        "alias": {
+          "@blocks": ["src/ui/blocks"],
+          "@components": ["src/ui/components"],
+          "@context": ["src/context"],
+          "@theme": ["src/ui/theme"],
+          "@ui": ["src/ui"],
+          "@utils": ["src/utils/*"]
+        }
+      } 
+    ]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic",
+        "importSource": "@emotion/react"
+      }
+    ]
+  ]
+}
