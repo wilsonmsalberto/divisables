@@ -30,6 +30,8 @@
         "runtime": "automatic",
         "importSource": "@emotion/react"
       }
-    ]
+    ],
+    ["@babel/preset-flow"],
+    ["@babel/preset-typescript"]
   ]
 }

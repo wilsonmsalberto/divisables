@@ -1,4 +1,5 @@
-import { render, themesList } from 'utils/tests';
+import React from 'react';
+import { render, themesList } from '@utils/tests';
 
 // Components
 import Button from '../Button';
@@ -6,7 +7,7 @@ import Button from '../Button';
 // Mocks
 const availableTypes = [ 'button', 'submit', 'reset' ];
 
-const getRenderElement = ({ theme, ...props }: any) => render(
+const getRenderElement = ({ ...props }: any) => render(
     <Button { ...props }>Dummy Button</Button>
 );
 

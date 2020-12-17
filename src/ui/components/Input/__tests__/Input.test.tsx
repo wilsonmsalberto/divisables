@@ -1,10 +1,11 @@
-import { fireEvent, render, themesList } from 'utils/tests';
+import React from 'react';
+import { fireEvent, render, themesList } from '@utils/tests';
 
 // Components
 import Input from '../Input';
 
 // Element without optional props
-const getBasicRenderElement = ({ theme, ...props }: any) => render(
+const getBasicRenderElement = ({ ...props }: any) => render(
     <Input
         id="dummyInput"
         label="Dummy Label"
@@ -14,7 +15,7 @@ const getBasicRenderElement = ({ theme, ...props }: any) => render(
 );
 
 // Element without some default
-const getRenderElement = ({ theme, ...props }: any) => render(
+const getRenderElement = ({ ...props }: any) => render(
     <Input
         hint="Dummy Hint"
         id="dummyInput"

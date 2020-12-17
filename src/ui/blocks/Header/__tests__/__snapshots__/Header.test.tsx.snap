@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Theme rendering:  "dark" theme 1`] = `
+.emotion-0 {
+  width: 100%;
+  height: 8rem;
+  padding: 2rem;
+  -webkit-transition: 1s color linear,1s background-color linear;
+  transition: 1s color linear,1s background-color linear;
+  color: ;
+  background-color: ;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #624DE3;
+  background-color: transparent;
+}
+
+.emotion-4 svg {
+  position: relative;
+  top: 0.1rem;
+  -webkit-transition: 0.2s -webkit-transform linear,0.2s opacity linear;
+  transition: 0.2s transform linear,0.2s opacity linear;
+}
+
+.emotion-4:hover svg {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+.emotion-6 {
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+<header
+  class="emotion-0 emotion-1"
+  data-testid="header"
+>
+  <header
+    class="emotion-2 emotion-3"
+  >
+    <button
+      class="emotion-4 emotion-5"
+      data-testid="themeswitcher"
+    >
+      <svg
+        fill="currentColor"
+        height="100%"
+        viewBox="0 0 512 512"
+        width="100%"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Contrast Icon
+        </title>
+        <path
+          d="M256 0C114.848 0 0 114.848 0 256s114.848 256 256 256 256-114.848 256-256S397.152 0 256 0zm0 480C132.48 480 32 379.52 32 256S132.48 32 256 32s224 100.48 224 224-100.48 224-224 224z"
+        />
+        <path
+          d="M256 64v384c112 0 192-85.968 192-192 0-106.048-80-192-192-192z"
+        />
+      </svg>
+    </button>
+    <h1
+      class="emotion-6 emotion-7"
+    >
+      The divisible counter
+    </h1>
+  </header>
+</header>
+`;
+
+exports[`<Header /> Theme rendering:  "light" theme 1`] = `
+.emotion-0 {
+  width: 100%;
+  height: 8rem;
+  padding: 2rem;
+  -webkit-transition: 1s color linear,1s background-color linear;
+  transition: 1s color linear,1s background-color linear;
+  color: ;
+  background-color: ;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  color: #624DE3;
+  background-color: transparent;
+}
+
+.emotion-4 svg {
+  position: relative;
+  top: 0.1rem;
+  -webkit-transition: 0.2s -webkit-transform linear,0.2s opacity linear;
+  transition: 0.2s transform linear,0.2s opacity linear;
+}
+
+.emotion-4:hover svg {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+.emotion-6 {
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+<header
+  class="emotion-0 emotion-1"
+  data-testid="header"
+>
+  <header
+    class="emotion-2 emotion-3"
+  >
+    <button
+      class="emotion-4 emotion-5"
+      data-testid="themeswitcher"
+    >
+      <svg
+        fill="currentColor"
+        height="100%"
+        viewBox="0 0 512 512"
+        width="100%"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Contrast Icon
+        </title>
+        <path
+          d="M256 0C114.848 0 0 114.848 0 256s114.848 256 256 256 256-114.848 256-256S397.152 0 256 0zm0 480C132.48 480 32 379.52 32 256S132.48 32 256 32s224 100.48 224 224-100.48 224-224 224z"
+        />
+        <path
+          d="M256 64v384c112 0 192-85.968 192-192 0-106.048-80-192-192-192z"
+        />
+      </svg>
+    </button>
+    <h1
+      class="emotion-6 emotion-7"
+    >
+      The divisible counter
+    </h1>
+  </header>
+</header>
+`;

@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> Theme rendering:  "dark" theme 1`] = `
+.emotion-0 {
+  margin-bottom: 3rem;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  color: #778CA3;
+  text-align: center;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.3s color linear;
+  transition: 0.3s color linear;
+}
+
+.emotion-4 {
+  display: block;
+  width: 100%;
+  outline: 0;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding: 0.8rem 1rem;
+  background: transparent;
+  border: 0;
+  border: .1rem solid #00234B;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  text-align: center;
+  -webkit-transition: 0.3s border linear;
+  transition: 0.3s border linear;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #778CA3;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #778CA3;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #778CA3;
+}
+
+.emotion-4::placeholder {
+  color: #778CA3;
+}
+
+.emotion-6 {
+  display: block;
+  margin-top: 0.8rem;
+  width: 100%;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #778CA3;
+  -webkit-transition: 0.3s color linear;
+  transition: 0.3s color linear;
+}
+
+<div
+  class="emotion-0 emotion-1"
+  data-testid="input"
+>
+  <label
+    class="emotion-2 emotion-3"
+    for="dummyInput"
+  >
+    Dummy Label
+  </label>
+  <input
+    class="emotion-4 emotion-5"
+    id="dummyInput"
+    placeholder="Dummy Placeholder"
+    type="text"
+    value=""
+  />
+  <span
+    class="emotion-6 emotion-7"
+  >
+    Dummy Hint
+  </span>
+</div>
+`;
+
+exports[`<Input /> Theme rendering:  "light" theme 1`] = `
+.emotion-0 {
+  margin-bottom: 3rem;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  color: #778CA3;
+  text-align: center;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.3s color linear;
+  transition: 0.3s color linear;
+}
+
+.emotion-4 {
+  display: block;
+  width: 100%;
+  outline: 0;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding: 0.8rem 1rem;
+  background: transparent;
+  border: 0;
+  border: .1rem solid #00234B;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  text-align: center;
+  -webkit-transition: 0.3s border linear;
+  transition: 0.3s border linear;
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #778CA3;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #778CA3;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #778CA3;
+}
+
+.emotion-4::placeholder {
+  color: #778CA3;
+}
+
+.emotion-6 {
+  display: block;
+  margin-top: 0.8rem;
+  width: 100%;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #778CA3;
+  -webkit-transition: 0.3s color linear;
+  transition: 0.3s color linear;
+}
+
+<div
+  class="emotion-0 emotion-1"
+  data-testid="input"
+>
+  <label
+    class="emotion-2 emotion-3"
+    for="dummyInput"
+  >
+    Dummy Label
+  </label>
+  <input
+    class="emotion-4 emotion-5"
+    id="dummyInput"
+    placeholder="Dummy Placeholder"
+    type="text"
+    value=""
+  />
+  <span
+    class="emotion-6 emotion-7"
+  >
+    Dummy Hint
+  </span>
+</div>
+`;

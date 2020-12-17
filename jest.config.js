@@ -2,6 +2,9 @@ module.exports = {
     collectCoverage    : true,
     collectCoverageFrom: [
         '<rootDir>/src/**/*.{js,jsx,ts,tsx}',
+        '!<rootDir>/src/**/*.d.{js,jsx,ts,tsx}',
+        '!<rootDir>/src/reportWebVitals.ts',
+        '!<rootDir>/src/setupTests.ts',
     ],
     coverageThreshold: {
         global: {
@@ -22,7 +25,6 @@ module.exports = {
     },
     moduleFileExtensions    : [ 'ts', 'tsx', 'js', 'jsx' ],
     modulePathIgnorePatterns: [ '<rootDir>/coverage/' ],
-    testPathIgnorePatterns  : [ 'dist' ],
     transform               : {
         '^.+\\.[tj]sx?$': 'babel-jest',
     },

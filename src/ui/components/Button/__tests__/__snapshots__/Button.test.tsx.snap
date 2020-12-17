@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Theme rendering:  "dark" theme 1`] = `
+.emotion-0 {
+  position: relative;
+  width: 18rem;
+  height: 4.5rem;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  border-radius: 5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: none;
+  -webkit-transition: 0.2s -webkit-transform linear,0.2s opacity linear;
+  transition: 0.2s transform linear,0.2s opacity linear;
+  color: #F9FAFF;
+  background-color: #624DE3;
+  border: .2rem solid rgba(98,77,227,0.3);
+  box-shadow: 0 .6rem 1.2rem rgba(98,77,227,0.3);
+}
+
+.emotion-0:hover {
+  -webkit-transform: translateY(0.2rem);
+  -moz-transform: translateY(0.2rem);
+  -ms-transform: translateY(0.2rem);
+  transform: translateY(0.2rem);
+  opacity: 0.85;
+}
+
+<button
+  class="emotion-0 emotion-1"
+  data-testid="button"
+  type="button"
+>
+  Dummy Button
+</button>
+`;
+
+exports[`<Button /> Theme rendering:  "light" theme 1`] = `
+.emotion-0 {
+  position: relative;
+  width: 18rem;
+  height: 4.5rem;
+  padding: 0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  border-radius: 5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: none;
+  -webkit-transition: 0.2s -webkit-transform linear,0.2s opacity linear;
+  transition: 0.2s transform linear,0.2s opacity linear;
+  color: #F9FAFF;
+  background-color: #624DE3;
+  border: .2rem solid rgba(98,77,227,0.3);
+  box-shadow: 0 .6rem 1.2rem rgba(98,77,227,0.3);
+}
+
+.emotion-0:hover {
+  -webkit-transform: translateY(0.2rem);
+  -moz-transform: translateY(0.2rem);
+  -ms-transform: translateY(0.2rem);
+  transform: translateY(0.2rem);
+  opacity: 0.85;
+}
+
+<button
+  class="emotion-0 emotion-1"
+  data-testid="button"
+  type="button"
+>
+  Dummy Button
+</button>
+`;

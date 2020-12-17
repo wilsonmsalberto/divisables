@@ -1,14 +1,14 @@
+import React from 'react';
 import {
     fireEvent,
     render,
     themesList,
-    waitFor,
-} from 'utils/tests';
+} from '@utils/tests';
 
 // Components
 import ThemeSwitcher from '../ThemeSwitcher';
 
-const getRenderElement = ({ theme, ...props }: any) => render(
+const getRenderElement = ({ ...props }: any) => render(
     <ThemeSwitcher { ...props }/>
 );
 

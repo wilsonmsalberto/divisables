@@ -1,4 +1,5 @@
-import { render, themesList } from 'utils/tests';
+import React from 'react';
+import { render, themesList } from '@utils/tests';
 
 // Components
 import Header from '../Header';

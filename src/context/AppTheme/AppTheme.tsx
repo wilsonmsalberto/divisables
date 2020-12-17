@@ -5,14 +5,7 @@ import React, {
 // Theme
 import { Dark, Light } from '@ui/theme';
 
-declare interface ThemeContextInterface {
-  activeThemeName: string;
-  setActiveThemeName: React.Dispatch<React.SetStateAction<string>>;
-  switchTheme: () => void;
-  theme: Theme;
-}
-
-export const AppThemeContext = createContext({} as ThemeContextInterface);
+export const AppThemeContext = createContext<ThemeContextInterface | undefined>(undefined);
 const { Provider } = AppThemeContext;
 
 export const AppThemeProvider = ({
