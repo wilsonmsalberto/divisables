@@ -9,3 +9,14 @@ export const Error = styled.div`
   color: ${({ theme }) => theme.highlight};
   margin: 2rem 0;
 `;
+
+export const Success = styled.div`
+  text-align: center;
+  color: ${({ theme }) => theme.secondary};
+  margin: 2rem 0;
+  font-size: 2rem;
+`;
+
+export const AlertSelector = styled.div`
+  margin-top: 4rem;
+`;

@@ -63,7 +63,7 @@ describe('<Input />', () => {
             const labelComponent = getByText('Dummy Label');
             const hintComponent = getByText('Dummy Hint');
 
-            expect(inputComponent).toHaveStyleRule('border-bottom', '.1rem solid #00234B');
+            expect(inputComponent).toHaveStyleRule('border', '.1rem solid #00234B');
             expect(labelComponent).toHaveStyleRule('color', '#778CA3');
             expect(hintComponent).toHaveStyleRule('color', '#778CA3');
         });
@@ -76,7 +76,7 @@ describe('<Input />', () => {
 
             inputComponent.focus();
 
-            expect(inputComponent).toHaveStyleRule('border-bottom', '.1rem solid #624DE3');
+            expect(inputComponent).toHaveStyleRule('border', '.1rem solid #624DE3');
             expect(labelComponent).toHaveStyleRule('color', '#624DE3');
         });
 
@@ -86,17 +86,17 @@ describe('<Input />', () => {
             const inputComponent = getByPlaceholderText('Dummy Placeholder');
             const labelComponent = getByText('Dummy Label');
 
-            expect(inputComponent).toHaveStyleRule('border-bottom', '.1rem solid #00234B');
+            expect(inputComponent).toHaveStyleRule('border', '.1rem solid #00234B');
             expect(labelComponent).toHaveStyleRule('color', '#778CA3');
 
             inputComponent.focus();
 
-            expect(inputComponent).toHaveStyleRule('border-bottom', '.1rem solid #624DE3');
+            expect(inputComponent).toHaveStyleRule('border', '.1rem solid #624DE3');
             expect(labelComponent).toHaveStyleRule('color', '#624DE3');
 
             inputComponent.blur();
 
-            expect(inputComponent).toHaveStyleRule('border-bottom', '.1rem solid #00234B');
+            expect(inputComponent).toHaveStyleRule('border', '.1rem solid #00234B');
             expect(labelComponent).toHaveStyleRule('color', '#778CA3');
         });
 

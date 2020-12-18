@@ -29,13 +29,17 @@ exports[`<Header /> Theme rendering:  "dark" theme 1`] = `
   background: transparent;
   border: 0;
   border: .1rem solid #00234B;
+  text-align: center;
+  color: #778CA3;
+  -webkit-transition: 0.3s border linear;
+  transition: 0.3s border linear;
+}
+
+.emotion-6:not([type='checkbox']) {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  text-align: center;
-  -webkit-transition: 0.3s border linear;
-  transition: 0.3s border linear;
 }
 
 .emotion-6::-webkit-input-placeholder {
@@ -84,6 +88,10 @@ exports[`<Header /> Theme rendering:  "dark" theme 1`] = `
   opacity: 0.85;
 }
 
+.emotion-22 {
+  margin-top: 4rem;
+}
+
 <div
   class="emotion-0 emotion-1"
   data-testid="interface"
@@ -113,13 +121,13 @@ exports[`<Header /> Theme rendering:  "dark" theme 1`] = `
   >
     <label
       class="emotion-4 emotion-5"
-      for="firstNumber"
+      for="startNumber"
     >
       First Number
     </label>
     <input
       class="emotion-6 emotion-7"
-      id="firstNumber"
+      id="startNumber"
       placeholder=""
       type="number"
       value=""
@@ -132,13 +140,13 @@ exports[`<Header /> Theme rendering:  "dark" theme 1`] = `
   >
     <label
       class="emotion-4 emotion-5"
-      for="secondNumber"
+      for="endNumber"
     >
       Second Number
     </label>
     <input
       class="emotion-6 emotion-7"
-      id="secondNumber"
+      id="endNumber"
       placeholder=""
       type="number"
       value=""
@@ -152,6 +160,29 @@ exports[`<Header /> Theme rendering:  "dark" theme 1`] = `
   >
     Process
   </button>
+  <div
+    class="emotion-22 emotion-23"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      data-testid="input"
+    >
+      <label
+        class="emotion-4 emotion-5"
+        for="alert"
+      >
+        Use Alert
+      </label>
+      <input
+        class="emotion-6 emotion-7"
+        id="alert"
+        placeholder=""
+        type="checkbox"
+        value=""
+      />
+      
+    </div>
+  </div>
 </div>
 `;
 
@@ -184,13 +215,17 @@ exports[`<Header /> Theme rendering:  "light" theme 1`] = `
   background: transparent;
   border: 0;
   border: .1rem solid #00234B;
+  text-align: center;
+  color: #778CA3;
+  -webkit-transition: 0.3s border linear;
+  transition: 0.3s border linear;
+}
+
+.emotion-6:not([type='checkbox']) {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  text-align: center;
-  -webkit-transition: 0.3s border linear;
-  transition: 0.3s border linear;
 }
 
 .emotion-6::-webkit-input-placeholder {
@@ -239,6 +274,10 @@ exports[`<Header /> Theme rendering:  "light" theme 1`] = `
   opacity: 0.85;
 }
 
+.emotion-22 {
+  margin-top: 4rem;
+}
+
 <div
   class="emotion-0 emotion-1"
   data-testid="interface"
@@ -268,13 +307,13 @@ exports[`<Header /> Theme rendering:  "light" theme 1`] = `
   >
     <label
       class="emotion-4 emotion-5"
-      for="firstNumber"
+      for="startNumber"
     >
       First Number
     </label>
     <input
       class="emotion-6 emotion-7"
-      id="firstNumber"
+      id="startNumber"
       placeholder=""
       type="number"
       value=""
@@ -287,13 +326,13 @@ exports[`<Header /> Theme rendering:  "light" theme 1`] = `
   >
     <label
       class="emotion-4 emotion-5"
-      for="secondNumber"
+      for="endNumber"
     >
       Second Number
     </label>
     <input
       class="emotion-6 emotion-7"
-      id="secondNumber"
+      id="endNumber"
       placeholder=""
       type="number"
       value=""
@@ -307,5 +346,28 @@ exports[`<Header /> Theme rendering:  "light" theme 1`] = `
   >
     Process
   </button>
+  <div
+    class="emotion-22 emotion-23"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      data-testid="input"
+    >
+      <label
+        class="emotion-4 emotion-5"
+        for="alert"
+      >
+        Use Alert
+      </label>
+      <input
+        class="emotion-6 emotion-7"
+        id="alert"
+        placeholder=""
+        type="checkbox"
+        value=""
+      />
+      
+    </div>
+  </div>
 </div>
 `;

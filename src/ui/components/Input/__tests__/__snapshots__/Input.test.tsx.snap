@@ -25,13 +25,17 @@ exports[`<Input /> Theme rendering:  "dark" theme 1`] = `
   background: transparent;
   border: 0;
   border: .1rem solid #00234B;
+  text-align: center;
+  color: #778CA3;
+  -webkit-transition: 0.3s border linear;
+  transition: 0.3s border linear;
+}
+
+.emotion-4:not([type='checkbox']) {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  text-align: center;
-  -webkit-transition: 0.3s border linear;
-  transition: 0.3s border linear;
 }
 
 .emotion-4::-webkit-input-placeholder {
@@ -111,13 +115,17 @@ exports[`<Input /> Theme rendering:  "light" theme 1`] = `
   background: transparent;
   border: 0;
   border: .1rem solid #00234B;
+  text-align: center;
+  color: #778CA3;
+  -webkit-transition: 0.3s border linear;
+  transition: 0.3s border linear;
+}
+
+.emotion-4:not([type='checkbox']) {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  text-align: center;
-  -webkit-transition: 0.3s border linear;
-  transition: 0.3s border linear;
 }
 
 .emotion-4::-webkit-input-placeholder {

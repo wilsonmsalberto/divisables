@@ -4,35 +4,42 @@ import React, { useEffect, useState } from 'react';
 import Button from '@components/Button';
 import Input from '@components/Input';
 
+// Utils
+import { optimalCount } from '@utils/divisible';
+
 // Styles
-import { Error, Wrapper } from './styles';
+import { AlertSelector, Error, Success, Wrapper } from './styles';
 
 const Header = (): React.ReactElement => {
-    const [ firstNumber, setFirstNumber ] = useState(null);
-    const [ secondNumber, setSecondNumber ] = useState(null);
+    const [ startNumber, setStartNumber ] = useState(null);
+    const [ endNumber, setEndNumber ] = useState(null);
     const [ divisibleNumber, setDivisibleNumber ] = useState(null);
+    const [ divisibleCount, setDivisibleCount ] = useState(null);
 
     const [ error, setInterfaceError ] = useState(null);
+    const [ useAlert, setUseAlert ] = useState(null);
+
+    const isNumber = (val) => Number.isInteger(val);
+    const isStartNumberValid = isNumber(startNumber);
+    const isEndNumberValid = isNumber(endNumber);
+    const isDivisibleNumberValid = isNumber(divisibleNumber);
+    const isCountValid = divisibleCount >= 0 && Number.isInteger(divisibleCount) && isStartNumberValid && isEndNumberValid && isDivisibleNumberValid;
 
     useEffect(() => {
-        if (!firstNumber || !secondNumber || !divisibleNumber) {
+        setDivisibleCount(null);
+
+        if (!startNumber || !endNumber || !divisibleNumber) {
             return;
         }
 
-        const isNumber = (val) => Number.isInteger(val);
+        const isEndNumberBigger = endNumber > startNumber;
+        const isDivisibleSmaller = divisibleNumber < endNumber;
 
-        const isFirstNumberValid = isNumber(firstNumber);
-        const isSecondNumberValid = isNumber(secondNumber);
-        const isDivisibleNumberValid = isNumber(divisibleNumber);
-
-        const isSecondNumberBigger = secondNumber > firstNumber;
-        const isDivisibleSmaller = divisibleNumber < secondNumber;
-
-        if (!isFirstNumberValid || !isSecondNumberValid || !isDivisibleNumberValid) {
+        if (!isStartNumberValid || !isEndNumberValid || !isDivisibleNumberValid) {
             return setInterfaceError('Please, use integers only for the inputs.');
         }
 
-        if (!isSecondNumberBigger) {
+        if (!isEndNumberBigger) {
             return setInterfaceError('The second number must be bigger than the first');
         }
 
@@ -41,7 +48,14 @@ const Header = (): React.ReactElement => {
         }
 
         setInterfaceError(null);
-    }, [ firstNumber, secondNumber, divisibleNumber ]);
+    }, [ divisibleNumber, endNumber, isDivisibleNumberValid, isEndNumberValid, isStartNumberValid, startNumber ]);
+
+    useEffect(() => {
+        if (useAlert && isCountValid) {
+            // eslint-disable-next-line no-alert
+            alert(divisibleCount);
+        }
+    }, [ divisibleCount, useAlert, isCountValid ]);
 
     return (
         <Wrapper data-testid="interface">
@@ -54,19 +68,19 @@ const Header = (): React.ReactElement => {
             />
 
             <Input
-                id="firstNumber"
+                id="startNumber"
                 label="First Number"
                 type="number"
                 pattern="[0-9]"
-                onChange={ value => setFirstNumber(Number(value)) }
+                onChange={ value => setStartNumber(Number(value)) }
             />
 
             <Input
-                id="secondNumber"
+                id="endNumber"
                 label="Second Number"
                 type="number"
                 pattern="[0-9]"
-                onChange={ value => setSecondNumber(Number(value)) }
+                onChange={ value => setEndNumber(Number(value)) }
             />
 
             {
@@ -74,9 +88,33 @@ const Header = (): React.ReactElement => {
                 <Error>{ error }</Error>
             }
 
-            <Button disabled={ !!error }>Process</Button>
+            {
+                isCountValid && !error && !useAlert &&
+                <Success>{ `There are ${divisibleCount} numbers, divisible by ${divisibleNumber} between ${startNumber} and ${endNumber}` }</Success>
+            }
+
+            <Button onClick={ handleProcess } disabled={ !!error }>Process</Button>
+
+            <AlertSelector>
+                <Input
+                    id="alert"
+                    label="Use Alert"
+                    type="checkbox"
+                    onChange={ () => setUseAlert(prev => !prev) }
+                />
+            </AlertSelector>
         </Wrapper>
     );
+
+    function handleProcess() {
+        const count = optimalCount({
+            divisible: divisibleNumber,
+            end      : endNumber,
+            start    : startNumber,
+        });
+
+        setDivisibleCount(count);
+    }
 };
 
 export default Header;

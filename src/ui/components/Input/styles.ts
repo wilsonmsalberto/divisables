@@ -29,10 +29,13 @@ export const StyledInput = styled.input`
   background: transparent;
   border: 0;
   border: .1rem solid ${({ isFocused, theme }: EmotionProps) => isFocused ? theme.highlight : theme.textColor};
-  appearance: none;
   text-align: center;
-
+  color: ${({ theme }) => theme.secondary};
   transition: 0.3s border linear;
+
+  &:not([type='checkbox']) {
+    appearance: none;
+  }
 
   &::placeholder {
     color: ${({ theme }) => theme.secondary};
