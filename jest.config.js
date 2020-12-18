@@ -5,6 +5,7 @@ module.exports = {
         '!<rootDir>/src/**/*.d.{js,jsx,ts,tsx}',
         '!<rootDir>/src/reportWebVitals.ts',
         '!<rootDir>/src/setupTests.ts',
+        '!<rootDir>/src/utils/tests.js',
     ],
     coverageThreshold: {
         global: {
