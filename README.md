@@ -92,8 +92,18 @@ yarn test:watch
 
 #### Developments
 
-- TBD
+- Added a personal set of UI components
+- Tested main utilities and UI components
+- Use of React Context for a Themable solution
+- Use of theming with Styled Components (Emotionjs) to easily switch themes if needed
+- Creation of small components that are reusable
+- Creation of block components that aggregate some logic
+- Some accessiblity and semantic concerns were applied
+- Use of ESLint, StyleLint and EditorConfig to have a consistent set of code standards
 
 #### Improvements
 
-- TBD
+- Dark mode should be more visually balanced
+- Coverage should reach threshold
+- Main interface component should be better tested
+- Could have deployed in a free service such as Netlify
